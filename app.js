@@ -6,7 +6,7 @@ const input = document.getElementById("input");
 let ws;
 
 function connectWebSocket() {
-    ws = new WebSocket("ws://192.168.0.109:8081");
+    ws = new WebSocket("ws://79.132.139.166:3000");
     ws.onopen = () => {
         setStatus("ONLINE. Событие onopen");
     };

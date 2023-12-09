@@ -1,6 +1,6 @@
 const WebSocket = require("ws");
 
-const server = new WebSocket.Server({ port: 8081 });
+const server = new WebSocket.Server({ port: 3000 });
 
 server.on("connection", (ws, req) => {
     try {
@@ -38,5 +38,3 @@ server.on("connection", (ws, req) => {
         console.log(error);
     }
 });
-
-console.log(`Сервер запущен! ${server.address().port}`);
